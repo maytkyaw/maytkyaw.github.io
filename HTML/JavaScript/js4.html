@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array
+        let numberArray = [1,2,3,12,97];
+        console.log(numberArray[4]);
+        console.log(numberArray.length);
+        let stringArray = Array('y', 'u', 'z', 'u', 'r', 'u');
+        console.log(stringArray[4]);
+
+        //value of different types
+        let myArray = ['m', 't', 97, 98, ['y','m',4]];
+        console.log(myArray[4][1]);
+
+        //multi-dimensional Arrays
+        let multiArray = [[27,23,4],['Y','M','Z'],['H',123]];
+        console.log(multiArray[2],[1]);
+
+        let Names = [];
+        Names[0] = 'Haru';
+        Names[1] = 'Tsuki';
+        Names[2] = 'Hana';
+        console.log(Names);
+        console.log(Names.length);
+
+        Names.push('Saku');
+        console.log(Names);
+
+
+        Names.unshift('Sakamoto');
+        console.log(Names);
+
+        Names.pop();
+        console.log(Names);
+
+        Names.shift();
+        console.log(Names);
+
+        Names.sort();
+        console.log(Names);
+
+        Names.reverse();
+        console.log(Names);
+
+        let Names_str = Names.toString();
+        console.log(Names_str);
+        let Names_arr = Names_str.split(",");
+        console.log(Names_arr);
+        let str = "Hello World";
+        console.log(str.split(''));
+        console.log(str.split(' '));
+
+        let aArray = [1,2,3];
+        let bArray = ['a','b','c'];
+        let cArray = aArray.concat (bArray);
+        console.log(cArray);
+        let dArray = [...aArray,...bArray,...cArray];
+        console.log(dArray);
+    </script>
+</body>
+</html>

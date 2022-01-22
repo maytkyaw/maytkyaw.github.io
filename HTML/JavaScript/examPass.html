@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+</head>
+<body>
+    
+    <h1>Exam Result</h1>
+    <form name= "myForm">
+        <label for="c">Turbo C</label>
+        <input type="number" name="c" id="c"  required placeholder="Enter Turbo C Marks">
+        <br><br>
+        <label for="java">Java</label>
+        <input type="number" name="java" id="java" required placeholder="Enter Java Marks">
+        <br><br>
+        <label for="js">JavaScript</label>
+        <input type="number" name="js" id="js" required placeholder="Enter JavaScript Marks">
+        <br><br>
+        <button type="button" onclick="result()">Result</button>
+    </form>
+        
+    <script>
+        function result(){
+        //alert ("Hello")
+            let c = document.myForm.c.value;
+            console.log(c);
+            let java = document.myForm.java.value;
+            console.log(java);
+            let js = document.myForm.js.value;
+            console.log(js);
+
+            if ( c > 100 || java > 100 || js > 100){
+                document.write('<h1>Not Available!Each subject should not be over 100!</h1>')
+                
+            }else{
+                if ( c < 50 || java < 50 || js < 50 ) {
+                document.write('<h1>This Student Fail!</h1>');
+                }else if( c > 80 || java > 80 || js > 80 ) {
+                    document.write('<h1>This Student Passed with Qualify!</h1>');
+                    if (c > 80) {
+                        document.write('<h4>Turbo C is Passed with Qualify</h4>');
+                    }
+                    if (java > 80) {
+                        document.write('<h4>Java is Passed with Qualify</h4>');
+                    }
+                    if (js > 80) {
+                        document.write('<h4>JavaScript is Passed with Qualify</h4>')
+                    }
+                }else{
+                document.write('<h1>This Student Pass!</h1>');
+                } 
+
+            }  
+        }
+    </script>
+</body>
+</html>

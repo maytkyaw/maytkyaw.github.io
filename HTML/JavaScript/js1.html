@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Variable
+        var a= 13; //Global Variable
+        console.log(a);
+        let b = 23; //Blocvk Scope Variable
+        console.log(b);
+        const c = 32; //Constant Variable
+        console.log(c);
+        a = 103;
+        console.log(a);
+        b = 223;
+        console.log(b);
+        // c = 301;
+        // console.log(c);
+        var a = 113;
+        console.log(a);
+        // let b = 223;
+        // console.log(b);
+        // const c = 332;
+        // console.log(c);
+        var x = 12;
+        if (x == 12){
+            var num1 = 12;
+            let num2 = 15;
+            console.log(num2);
+        }
+        console.log(num1);
+        
+        // console.log(num2);
+        let d; let e = "Element"; let f = "Full";
+        console.log(d);
+        let g = null;
+        console.log(g);
+        
+        // addition operator
+        let three = 1 + 2;
+        console.log(three);
+        let four = three + 1;
+        console.log(four);
+        let threeOne = 'three' + 1;
+        console.log(threeOne);
+        
+        // substration operator
+        let two = 4-2;
+        console.log(two);
+        let one = 3-9;
+        console.log(one);
+        
+        //division operator
+        let div1 = 20/5;
+        console.log(div1);
+        let div2 = 20/7;
+        console.log(div2);
+        let div3 = 1/0;
+        console.log(div3);
+        
+        //remainder operator
+        let rem1 = 20%5;
+        console.log(rem1);
+        let rem2 = 20%7;
+        console.log(rem2);
+        let rem3 = 1%0;
+        console.log(rem3);
+        
+        //multiplication operator
+        let mul1 = 12 * 12;
+        console.log(mul1);
+        let mul2 = (-12) * 12;
+        console.log(mul2);
+        
+        //Exponentitaion Operator
+        let exp1 = 2**2;
+        console.log(exp1);
+        let exp2 = 2**8;
+        console.log(exp2);
+
+        //Precedence
+        // * / %
+        // + -
+        // =
+
+        let total = 1 * 2 + 5 / 2 % 2;
+        console.log(total);
+
+        // Comparisons
+
+        let n = 12;
+        let m = "12";
+        console.log(n < 15);
+        console.log(n > 15);
+        console.log(13 <= 13);
+        console.log(n >= 12);
+        console.log(n == m);
+        console.log(n === m);
+        console.log(12 != "12");
+        console.log(12 !== "12");
+
+        // Logical Operator
+        // AND &&
+        // OR ||
+        // NOT !
+        console.log(12 < 13 && 12 < 15 && 16 > 3);
+        //true && true && true
+        console.log(10 < 12 && 80 < 60 && 79 >65 );
+        //true && false && true
+
+        console.log(10 < 12 || 13 < 9 || 45 < 5);
+        //true || false || false
+
+        // and x
+        //1 x 0 x 1 = 0
+        //or +
+        //1 + 0 + 0 = 1
+    </script>
+</body>
+</html>
